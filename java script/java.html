@@ -1,0 +1,290 @@
+# JavaScript Basics, Operators, and Looping
+
+## 1. What is JavaScript?
+
+JavaScript is a programming language used to make web pages interactive and dynamic.
+
+### Example
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hello JavaScript</h1>
+
+<script>
+    document.write("Welcome to JavaScript");
+</script>
+
+</body>
+</html>
+```
+
+---
+
+# 2. Variables
+
+Variables are used to store data.
+
+```javascript
+let name = "John";
+let age = 25;
+
+console.log(name);
+console.log(age);
+```
+
+### Types of Variables
+
+```javascript
+var a = 10;      // Old method
+let b = 20;      // Recommended
+const c = 30;    // Constant value
+```
+
+---
+
+# 3. Operators in JavaScript
+
+## A. Arithmetic Operators
+
+| Operator | Meaning        | Example |
+| -------- | -------------- | ------- |
+| +        | Addition       | 10 + 5  |
+| -        | Subtraction    | 10 - 5  |
+| *        | Multiplication | 10 * 5  |
+| /        | Division       | 10 / 5  |
+| %        | Modulus        | 10 % 3  |
+| ++       | Increment      | a++     |
+| --       | Decrement      | a--     |
+
+### Example
+
+```javascript
+let a = 10;
+let b = 5;
+
+console.log(a + b); // 15
+console.log(a - b); // 5
+console.log(a * b); // 50
+console.log(a / b); // 2
+console.log(a % b); // 0
+```
+
+---
+
+## B. Comparison Operators
+
+| Operator | Meaning               |
+| -------- | --------------------- |
+| ==       | Equal                 |
+| ===      | Strict Equal          |
+| !=       | Not Equal             |
+| >        | Greater Than          |
+| <        | Less Than             |
+| >=       | Greater Than or Equal |
+| <=       | Less Than or Equal    |
+
+### Example
+
+```javascript
+let x = 10;
+let y = 20;
+
+console.log(x == y);  // false
+console.log(x < y);   // true
+console.log(x >= y);  // false
+```
+
+---
+
+## C. Logical Operators
+
+| Operator | Meaning |
+| -------- | ------- |
+| &&       | AND     |
+| ||       | OR      |
+| !        | NOT     |
+
+### Example
+
+```javascript
+let age = 20;
+
+console.log(age > 18 && age < 60); // true
+console.log(age < 18 || age > 60); // false
+console.log(!(age > 18));          // false
+```
+
+---
+
+## D. Assignment Operators
+
+```javascript
+let x = 10;
+
+x += 5;  // x = x + 5
+x -= 2;  // x = x - 2
+x *= 3;  // x = x * 3
+
+console.log(x);
+```
+
+---
+
+# 4. Conditional Statements
+
+## if Statement
+
+```javascript
+let age = 18;
+
+if (age >= 18) {
+    console.log("Eligible to vote");
+}
+```
+
+## if-else Statement
+
+```javascript
+let age = 16;
+
+if (age >= 18) {
+    console.log("Eligible");
+} else {
+    console.log("Not Eligible");
+}
+```
+
+---
+
+# 5. Looping in JavaScript
+
+Loops are used to repeat a block of code.
+
+---
+
+## A. for Loop
+
+```javascript
+for(let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+
+### Output
+
+```text
+1
+2
+3
+4
+5
+```
+
+---
+
+## B. while Loop
+
+```javascript
+let i = 1;
+
+while(i <= 5) {
+    console.log(i);
+    i++;
+}
+```
+
+---
+
+## C. do-while Loop
+
+```javascript
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+} while(i <= 5);
+```
+
+---
+
+## D. for...of Loop (Arrays)
+
+```javascript
+let fruits = ["Apple", "Banana", "Mango"];
+
+for(let fruit of fruits) {
+    console.log(fruit);
+}
+```
+
+### Output
+
+```text
+Apple
+Banana
+Mango
+```
+
+---
+
+## E. for...in Loop (Objects)
+
+```javascript
+let student = {
+    name: "Rahul",
+    age: 20,
+    city: "Delhi"
+};
+
+for(let key in student) {
+    console.log(key + " : " + student[key]);
+}
+```
+
+### Output
+
+```text
+name : Rahul
+age : 20
+city : Delhi
+```
+
+---
+
+# Complete Example
+
+```javascript
+let num = 5;
+
+console.log("Table of 5");
+
+for(let i = 1; i <= 10; i++) {
+    console.log(num + " x " + i + " = " + (num * i));
+}
+```
+
+### Output
+
+```text
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+...
+5 x 10 = 50
+```
+
+## Summary
+
+* **Variables:** `var`, `let`, `const`
+* **Operators:** Arithmetic, Comparison, Logical, Assignment
+* **Conditions:** `if`, `if-else`
+* **Loops:** `for`, `while`, `do-while`, `for...of`, `for...in`
+
+These are the core JavaScript concepts every beginner should learn before moving to functions, arrays, objects, and DOM manipulation.
+# JavaScript `if`, `if-else`, and `if-else if` Statements
+
+Conditional statements are used to make decisions in a program.
